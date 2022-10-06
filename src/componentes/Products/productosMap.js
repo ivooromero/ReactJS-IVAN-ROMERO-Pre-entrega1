@@ -23,7 +23,7 @@ const Prodc = () =>{
                     <div><h3>{producto.nombre}</h3>
                     <p>U$D {producto.precio}</p>
                     </div>
-                    <Link to={'/item/:'+producto.id}><button onClick={() => console.log("producto agregado al carrito "+ (producto.nombre))}>Comprar</button></Link>
+                    <Link to={'/item/:'+ producto.id}><button onClick={() => console.log("producto agregado al carrito "+ (producto.nombre))}>Comprar</button></Link>
                     </div>
                     <p></p>
                 </div>
@@ -48,7 +48,6 @@ const Prodc = () =>{
         ))}
         </section>
         </div>
-            <Cart></Cart>
     </div>
 </div>
 
