@@ -9,7 +9,6 @@ import Cart from './componentes/Cart/Carrito';
 import ItemDetailContainer from './componentes/ItemDetail/ItemDetailContainer';
 import ItemListContainer from './componentes/ItemList/ItemListContainer';
 function App() {
-
   return (
     <body>
       <BrowserRouter>

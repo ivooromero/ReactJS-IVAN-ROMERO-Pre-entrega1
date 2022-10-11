@@ -1,0 +1,44 @@
+.padre{
+    background-image: url("https://images.unsplash.com/photo-1629053800620-4584e836b3bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1422&q=80");
+    background-size: 100%;
+    height: 800px;
+}
+
+.boxProducto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #969696ab;
+    position: relative;
+    top: 90px;
+}
+.Producto img{
+    transform: rotate(-45deg);
+    width: 500px;
+}
+.especificacionesProducto{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    text-align: center;
+    align-items: center;
+}
+.especificacionesProducto h4{
+    font-size: xx-large;
+}
+
+.especificacionesProducto button{
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: #969696;
+    font-size: medium;
+    margin-right: 7px;
+    transition: 0.3s;
+    margin: 15px;
+}
+.especificacionesProducto button:hover{
+background-color: black;
+color: white;
+}

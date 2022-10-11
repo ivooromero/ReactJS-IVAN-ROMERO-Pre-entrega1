@@ -1,6 +1,6 @@
 import hawx from '../hawx.png'
 import { Link } from 'react-router-dom';
-const Header = ({children}) => {
+const Header = ({}) => {
     return(
         <header id="home" class="p">
         <nav className="header">
