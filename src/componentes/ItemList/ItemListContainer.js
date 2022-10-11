@@ -24,7 +24,6 @@ const ItemListContainer = () => {
                         </div>
                         <Link to={'/item/'+ producto.id}><button>Comprar</button></Link>
                         </div>
-                        <p></p>
                     </div>
             ))
             }
