@@ -7,6 +7,7 @@ import Header from '../Header';
 import './itemDetailContainer.css'
 import a from "../Products/fotosProductos/asdas.png"
 import { getProduct } from '../Utils/functions';
+import NavBar from '../navBar';
 const ItemDetailContainer = () => {
     const { id } = useParams();
     const [getProducto, setgetProducto] = useState(0)
