@@ -31,8 +31,10 @@ const NavBar = () =>{
                     
                 </li>
             </ul>
+            <div className='busqueda'>
             <input type="text" placeholder="Search.." className="busqueda" value={busqueda} onChange={handleChange}></input>
-            <Link to={"/itemSearch/" + busqueda}><button type="submit" >Buscar</button></Link>
+            <Link to={"/itemSearch/" + busqueda}><button type="submit"  className='buscarBoton'>Buscar</button></Link>
+            </div>
             <CartWidget></CartWidget>
         </article>
 </>        

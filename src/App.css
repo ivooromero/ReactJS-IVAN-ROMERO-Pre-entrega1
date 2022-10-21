@@ -142,3 +142,37 @@ body{
 .busqueda{
   height: 40px;
 }
+.busqueda input{
+  background-color: rgba(128, 128, 128, 0.342);
+  border: none;
+  padding-left: 10px;
+}
+.busqueda button{
+  height: 40px;
+  width: 70px;
+  border: none;
+  background-color: #969696;
+  transition: 0.3s;
+}
+.busqueda button:hover{
+  background-color: black;
+  color: white;
+}
+.container{
+  width: 1400px;
+  background-color: rgba(255, 255, 255, 0.774);
+  margin-top: 15px;
+}
+.container h1{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+.containerPadre{
+  display: flex;
+  justify-content: center;
+  background-image: url("./nikeWallpaper.jpg");
+}
+.itemListContainer img{
+  background-color: white;
+}
+

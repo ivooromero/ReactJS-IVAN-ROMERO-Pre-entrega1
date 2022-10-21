@@ -1,7 +1,6 @@
 import { createContext } from "react";
 import { searchProduct } from "../Utils/functions";
 import { useState } from "react";
-import "./busqueda.css";
 
 
 const BusquedaContext = createContext()
