@@ -5,7 +5,6 @@ import { getFirestore } from 'firebase/firestore';
 import { useEffect } from 'react';
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { zapatillas } from "../Products/zapatillas";
 import { getDocs } from 'firebase/firestore';
 import { collection } from 'firebase/firestore';
 import { Query } from 'firebase/firestore';

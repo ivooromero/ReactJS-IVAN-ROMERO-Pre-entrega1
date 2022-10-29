@@ -1,20 +1,10 @@
-import React, {useState} from 'react';
-import { zapatillas } from './Products/zapatillas';
-import { remeras } from './Products/remeras';
+import React from 'react';
 import CartWidget from './Cart/CartWidget';
 import { Link } from 'react-router-dom';
-import { searchProduct } from './Utils/functions';
 import { useContext } from 'react';
 import busquedaContext from './context/busquedaContext';
 const NavBar = () =>{
-    /*const [busqueda , setBusqueda] = useState("")
-    const product = searchProduct(busqueda)
-    const handleChange =(lec) =>{
-        setBusqueda(lec.target.value)
-    }*/
-
     const {busqueda , product , handleChange} = useContext(busquedaContext)
-
         return(
             
 <>

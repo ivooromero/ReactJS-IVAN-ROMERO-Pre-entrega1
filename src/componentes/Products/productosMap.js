@@ -1,8 +1,6 @@
-import { zapatillas } from "./zapatillas";
-import { remeras } from "./remeras";
+
 import React, {useState , useEffect} from 'react';
-import Cart from "../Cart/Carrito";
-import { useParams } from 'react-router-dom';
+
 import NavBar from "../navBar";
 import { Link } from "react-router-dom";
 import { getAllProducts } from "../Utils/functions";

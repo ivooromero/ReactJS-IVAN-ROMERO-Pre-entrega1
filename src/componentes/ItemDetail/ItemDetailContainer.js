@@ -1,14 +1,10 @@
 import { useParams } from 'react-router-dom';
 import { useContext, useEffect } from 'react';
-import { zapatillas } from '../Products/zapatillas';
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Header from '../Header';
 import './itemDetailContainer.css'
-import a from "../Products/fotosProductos/asdas.png"
 import { getProduct } from '../Utils/functions';
-import NavBar from '../navBar';
-import { CartContext, useCartContext } from '../context/CartContext';
+import { CartContext} from '../context/CartContext';
 import swal from 'sweetalert';
 const ItemDetailContainer = () => {
     const {añadirProducto} = useContext(CartContext);

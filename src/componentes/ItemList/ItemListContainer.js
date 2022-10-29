@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Header from "../Header";
 import "./itemListContainer.css"
 import NavBar from "../navBar";
-import { getAllProducts } from "../Utils/functions";
 import { useState, useEffect } from "react";
 const ItemListContainer = () => {
     const { id } = useParams();

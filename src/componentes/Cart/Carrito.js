@@ -1,12 +1,11 @@
 import Header from "../Header";
-import CartProvider, { CartContext } from "../context/CartContext";
-import { useCartContext } from "../context/CartContext";
+import { CartContext } from "../context/CartContext";
 import { useContext, useState } from "react";
 import './carrito.css'
 import { createOrder } from "../Utils/functions";
 import swal from "sweetalert";
 const Cart = () =>{
-  const { cart, removeItem, clear } = useContext(CartContext);
+  const { cart, removeItem } = useContext(CartContext);
 
     const eliminarObjeto = (id) =>{
         removeItem(id)
@@ -45,7 +44,6 @@ const Cart = () =>{
       if (newOrder ==  null){
         swal("Datos incorrectos" , " " , "error")
       }else{
-
           const newOrderId = await createOrder(newOrder);
           swal(swal("Tu numero de orden es "+ "'"+newOrderId+"'" , "Cualquier duda consultar al soporte", "success"))
       }
