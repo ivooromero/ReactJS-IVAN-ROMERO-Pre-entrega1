@@ -7,7 +7,6 @@ import { createOrder } from "../Utils/functions";
 import swal from "sweetalert";
 const Cart = () =>{
   const { cart, removeItem, clear } = useContext(CartContext);
-  const [orderId, setOrderId] = useState();
 
     const eliminarObjeto = (id) =>{
         removeItem(id)
@@ -40,7 +39,6 @@ const Cart = () =>{
         
       };
       const newOrderId = await createOrder(newOrder);
-      setOrderId(newOrderId);
       swal(swal("Tu numero de orden es "+ "'"+newOrderId+"'" , "Cualquier duda consultar al soporte", "success"))
     }
 

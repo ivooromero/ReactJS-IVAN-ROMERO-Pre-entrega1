@@ -38,3 +38,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ### Demo 
 
 ![](https://firebasestorage.googleapis.com/v0/b/nike-ecommerce-coderhouse.appspot.com/o/Recording%202022-10-29%20at%2016.13.52%20(1).gif?alt=media&token=56fbb01a-8cb0-4e73-85d9-e88ae4e93b51)
+
+### Linkedin
+
+https://www.linkedin.com/in/ivanromerofed/
