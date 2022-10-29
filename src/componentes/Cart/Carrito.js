@@ -32,14 +32,23 @@ const Cart = () =>{
       codigopostal,
     }
     const handleBuy = async () => {
-      const newOrder = {
-        buyer: buyerMock,
-        items: cart,
-        total
-        
-      };
-      const newOrderId = await createOrder(newOrder);
-      swal(swal("Tu numero de orden es "+ "'"+newOrderId+"'" , "Cualquier duda consultar al soporte", "success"))
+      let newOrder = {}
+        if (buyerMock.calle == '' || buyerMock.primerNombre == '' || buyerMock.segundoNombre == ''|| buyerMock.ciudad == ''|| buyerMock.estado == ''|| buyerMock.codigopostal == ''){
+        newOrder = null
+      }else{
+        newOrder = {
+            buyer: buyerMock,
+            items: cart,
+            total
+          };
+      }
+      if (newOrder ==  null){
+        swal("Datos incorrectos" , " " , "error")
+      }else{
+
+          const newOrderId = await createOrder(newOrder);
+          swal(swal("Tu numero de orden es "+ "'"+newOrderId+"'" , "Cualquier duda consultar al soporte", "success"))
+      }
     }
 
     return(
