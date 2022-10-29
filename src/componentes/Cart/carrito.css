@@ -1,0 +1,184 @@
+.carritoGeneral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.finalizarCompra{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    justify-content: space-evenly;
+    margin-right: 100px;
+    position: sticky;
+    top: 50px;
+}
+.finalizarCompra div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: rgb(113, 113, 113);
+  }
+
+
+
+
+
+
+
+.productosEnElCarrito{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    min-height: 500px;
+}
+.productoUnico{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+.productoUnico img{
+    height: 100px;
+    width: 100px;
+}
+.productoUnico  h5 {
+    height: 50px;
+    width: 100px;
+}
+.productoUnico  p{
+    height: 50px;
+    width: 100px;
+}
+
+
+#close {
+  overflow: hidden;
+  position: relative;
+  border: none;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  font: inherit;
+  text-indent: 100%;
+  cursor: pointer;
+}
+
+#close:hover {
+  background: rgba(161, 29, 29, 0.264);
+}
+#close:before, #close:after {
+  position: absolute;
+  top: 15%;
+  left: calc(50% - .0625em);
+  width: 0.125em;
+  height: 70%;
+  border-radius: 0.125em;
+  transform: rotate(45deg);
+  background: currentcolor;
+  content: "";
+}
+#close:after {
+  transform: rotate(-45deg);
+}
+  
+
+
+@import url("https://fonts.googleapis.com/css?family=Arimo");
+.wrapper {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Arimo";
+  -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+
+}
+.container {
+  width: 65%;
+  padding: 5% 10%;
+}
+
+h1 {
+  align-self: center;
+}
+
+form {
+  width: 100%;
+}
+form > * {
+  margin-top: 20px;
+}
+form input {
+  width: 100%;
+  min-height: 25px;
+  border: 0;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  font-family: "Arimo";
+  margin-top: 5px;
+  color: #000000;
+  border-radius: 4px;
+}
+form label {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+}
+form h1 {
+  font-size: 24px;
+  line-height: 10px;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+form h1:nth-of-type(2) {
+  margin-top: 10%;
+}
+
+.name {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.name div {
+  width: 45%;
+}
+
+.address-info {
+  display: flex;
+  justify-content: space-between;
+}
+.address-info div {
+  width: 30%;
+}
+
+.cc-info {
+  display: flex;
+  justify-content: space-between;
+}
+.cc-info div {
+  width: 45%;
+}
+
+

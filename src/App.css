@@ -71,6 +71,11 @@ body{
   margin-right: 7px;
   transition: 0.3s;
 }
+.productoMap{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
 .productosDelCarrito .infoProductos button:hover{
   background-color: black;
   color: white;
@@ -99,14 +104,13 @@ body{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
   padding-left: 10px;
 }
 .compras{
   display: flex;
   flex-direction: row;
-
 }
+
 .tmcc{
   display: flex;
   flex-direction: column;

@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { searchProduct } from "../Utils/functions";
 import { useState } from "react";
-
+import { useParams } from "react-router-dom";
 
 const BusquedaContext = createContext()
 const BusquedaProvider =({children}) =>{

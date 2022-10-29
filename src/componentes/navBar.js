@@ -14,20 +14,21 @@ const NavBar = () =>{
     }*/
 
     const {busqueda , product , handleChange} = useContext(busquedaContext)
+
         return(
             
 <>
     <article className="search">
             <ul className="tagsRopa">
                 <li>
-                    <Link  to={"/category/zapatillas"}><a href="#zapatillas">Zapatillas</a></Link>
+                    <Link to={"/category/zapatillas"}><a>Zapatillas</a></Link>
                 </li>
                 <li>
-                    <Link to={"/category/remeras"}><a href="#remeras">Remeras</a></Link>
+                    <Link to={"/category/remeras"}><a >Remeras</a></Link>
                     
                 </li>
                 <li>
-                    <Link to={"/category/buzos"}><a href="#buzos">Buzos</a></Link>
+                    <Link to={"/category/buzos"}><a >Buzos</a></Link>
                     
                 </li>
             </ul>

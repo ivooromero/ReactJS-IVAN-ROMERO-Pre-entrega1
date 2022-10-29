@@ -4,9 +4,18 @@ import { Link } from "react-router-dom";
 import Header from "../Header";
 import "./itemListContainer.css"
 import NavBar from "../navBar";
+import { getAllProducts } from "../Utils/functions";
+import { useState, useEffect } from "react";
 const ItemListContainer = () => {
     const { id } = useParams();
-    const getProduct = getProductsByCategory(id)
+    const [getProduct , setGetProduct] = useState([])
+    useEffect(() => {
+        getProductsByCategory(id)
+        .then((data) => setGetProduct(data))
+        .catch((error) => setGetProduct(error))
+        console.log(getProduct)
+    }, []);
+    console.log(getProduct.categoria)
     return(
         <>
         <Header></Header>
@@ -16,13 +25,13 @@ const ItemListContainer = () => {
         </article>
         <section className="itemListContainer">
             {getProduct.map((producto, i) =>(
-                <div key = {i} id="zapatillas" className="producto">
+                <div key = {i} className="producto">
                         <img src = {producto.imagen}></img>
                         <div className="infoProductos">
                         <div><h3>{producto.nombre}</h3>
                         <p>U$D {producto.precio}</p>
                         </div>
-                        <Link to={'/item/'+ producto.id}><button>Comprar</button></Link>
+                        <Link to={'/item/'+ producto.idP}><button>Comprar</button></Link>
                         </div>
                     </div>
             ))

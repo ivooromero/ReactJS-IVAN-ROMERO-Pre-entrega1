@@ -4,6 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA4BshUum0qeY8ZLV59MRAIcKTK7FqOn1o",
+  authDomain: "nike-ecommerce-coderhouse.firebaseapp.com",
+  projectId: "nike-ecommerce-coderhouse",
+  storageBucket: "nike-ecommerce-coderhouse.appspot.com",
+  messagingSenderId: "1041447457514",
+  appId: "1:1041447457514:web:2974aeeef60865c2ecfd93",
+  measurementId: "G-N1XHLFT6LJ"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
