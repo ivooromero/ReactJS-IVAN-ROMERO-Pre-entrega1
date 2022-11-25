@@ -37,7 +37,6 @@ const [products , setProducts] = useState([])
                     </div>
                     <Link to={'/item/'+ producto.idP}><button onClick={() => setpagProducto(producto.id)}>Comprar</button></Link>
                     </div>
-                    <p></p>
                 </div>
         ))
         }

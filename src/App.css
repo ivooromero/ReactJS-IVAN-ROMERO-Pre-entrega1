@@ -59,7 +59,6 @@ body{
 }
 .productosDelCarrito div{
   border-color: gray;
-  box-shadow: 1px 1px 200px 1px gray; 
   padding: 5px;
 }
 .productosDelCarrito .infoProductos button{
@@ -74,7 +73,9 @@ body{
 .productoMap{
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  justify-content: space-between;
+  box-shadow: 1px 1px 50px 1px gray; 
+
 }
 .productosDelCarrito .infoProductos button:hover{
   background-color: black;
